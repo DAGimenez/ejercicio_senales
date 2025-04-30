@@ -1,5 +1,5 @@
 extends TextureButton
-var violetblock = preload( "res://scenes/Buttons/VioletGenerator/VioletGenerator.tscn")
+var violetblock = preload("res://scenes/Blocks/Violet/BlockViolet.tscn" )
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -7,7 +7,7 @@ func _ready() -> void:
 
 func  generate_block():
 	var insta_bloque_violeta= violetblock.instantiate()
-	add_child(violetblock.instantiate())
+	add_child(insta_bloque_violeta)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

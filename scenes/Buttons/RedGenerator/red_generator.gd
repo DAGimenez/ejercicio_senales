@@ -6,7 +6,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 func generate_block():  # con esto le decimos que tiene la funcion de generar bloques 
 	var inta_bloque_rojo = redblock.instantiate() # le decimos que instancia esos mismos bloques que acabamos de mencionar arriba
-	add_child(redblock) # y con este ya los crea
+	add_child(redblock.instantiate()) # y con este ya los crea
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

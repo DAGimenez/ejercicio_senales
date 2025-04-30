@@ -7,7 +7,7 @@ func _ready() -> void:
 
 func  generate_block():
 	var insta_bloque_violeta= violetblock.instantiate()
-	add_child(violetblock)
+	add_child(violetblock.instantiate())
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
